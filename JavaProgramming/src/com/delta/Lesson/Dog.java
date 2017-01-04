@@ -1,4 +1,4 @@
-package com.delta;
+package com.delta.Lesson;
 
 /**
  * Created by delta on 1/1/17.

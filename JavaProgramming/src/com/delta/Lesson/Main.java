@@ -1,4 +1,4 @@
-package com.delta;
+package com.delta.Lesson;
 
 public class Main {
 

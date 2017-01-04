@@ -1,9 +1,5 @@
 package com.delta;
 
-import javax.xml.transform.sax.SAXSource;
-import java.util.Locale;
-import java.util.function.DoubleBinaryOperator;
-
 /**
  * Created by delta on 1/1/17.
  */

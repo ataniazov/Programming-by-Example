@@ -1,4 +1,4 @@
-package com.delta;
+package com.delta.Lesson;
 
 // Single line comment
 
