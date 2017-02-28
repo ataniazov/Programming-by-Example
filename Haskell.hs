@@ -11,6 +11,28 @@ MultiLine Comments
 
 -- Int -2^63
 
+logo = do
+  putStrLn "_____ ______"
+  putStrLn "\\    \\\\     \\"
+  putStrLn " \\    \\\\     \\"
+  putStrLn "  \\    \\\\     \\ _____________"
+  putStrLn "   \\    \\\\     \\\\            \\"
+  putStrLn "    \\    \\\\     \\\\____________\\"
+  putStrLn "     \\    \\\\     \\ _____________"
+  putStrLn "     /    //      \\\\            \\"
+  putStrLn "    /    //        \\\\____________\\"
+  putStrLn "   /    //    /\\    \\"
+  putStrLn "  /    //    /  \\    \\"
+  putStrLn " /    //    /    \\    \\"
+  putStrLn "/____//____/      \\____\\"
+  putStrLn "   _    _           _        _ _"
+  putStrLn "  | |  | |         | |      | | |"
+  putStrLn "  | |__| | __ _ ___| | _____| | |"
+  putStrLn "  |  __  |/ _` / __| |/ / _ \\ | |"
+  putStrLn "  | |  | | (_| \\__ \\   <  __/ | |"
+  putStrLn "  |_|  |_|\\__,_|___/_|\\_\\___|_|_|\n"
+
+
 main = do
     let maxInt = maxBound :: Int
     print maxInt
