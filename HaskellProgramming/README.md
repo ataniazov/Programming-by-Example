@@ -1,4 +1,20 @@
 # Haskell Programming
+## How to install haskell?
+Ubuntu
+
+Steps to setup ghc and cabal:
+``` bash
+sudo apt-get update
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository -y ppa:hvr/ghc
+sudo apt-get update
+sudo apt-get install -y cabal-install-1.24 ghc-8.0.2
+cat >> ~/.bashrc <<EOF
+export PATH="\$HOME/.cabal/bin:/opt/cabal/1.24/bin:/opt/ghc/8.0.2/bin:\$PATH"
+EOF
+export PATH=~/.cabal/bin:/opt/cabal/1.24/bin:/opt/ghc/8.0.2/bin:$PATH
+```
+
 ## How to configure atom for haskell?
 1. System tools needed to be installed
 	* haskell-platform - Standard Haskell libraries and tools
