@@ -16,7 +16,7 @@
 2. Haskell tools needed to be installed:
 	* ghc-mod
 	* hlint
-	* stylish-haskell
+
 	* Prettify
 3. Download and install atom from https://atom.io
 4. Plugins needed to be installed:
@@ -37,5 +37,7 @@
 	* Extra editing Packages:
 		* vim-mode-plus https://atom.io/packages/vim-mode-plus
 		* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
-	* Binary Dependencies:
-		* 
+	* Binary Dependencies (stack install):
+		* stylish-haskell
+		* ghc-mod
+		* ghc-modi
