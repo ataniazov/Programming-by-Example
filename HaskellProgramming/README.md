@@ -17,14 +17,18 @@
 	* ghc-mod
 	* hlint
 	* stylish-haskell
+	* Prettify
 3. Download and install atom from https://atom.io
 4. Plugins needed to be installed:
-	* vim-mode-plus https://atom.io/packages/vim-mode-plus
-	* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
-	* 
-	* ide-haskell https://atom.io/packages/ide-haskell
-	* ide-haskell-repl https://atom.io/packages/ide-haskell-repl
-	* language-haskell https://atom.io/packages/language-haskell
-	* ide-haskell-cabal https://atom.io/packages/ide-haskell-cabal
-	* haskell-ghc-mod https://atom.io/packages/haskell-ghc-mod
-	* autocomplete-haskell https://atom.io/packages/autocomplete-haskell
+	* Core Atom-Haskell Packages:
+		* language-haskell https://atom.io/packages/language-haskell
+		* ide-haskell https://atom.io/packages/ide-haskell
+		* ide-haskell-cabal https://atom.io/packages/ide-haskell-cabal
+		* haskell-ghc-mod https://atom.io/packages/haskell-ghc-mod
+		* autocomplete-haskell https://atom.io/packages/autocomplete-haskell
+	* Extra Atom-Haskell Packages:
+		* ide-haskell-repl https://atom.io/packages/ide-haskell-repl
+		
+	* Extra editing Packages:
+		* vim-mode-plus https://atom.io/packages/vim-mode-plus
+		* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
