@@ -8,8 +8,9 @@
 	* ghc - The Glasgow Haskell Compilation system
 	* ghc-doc - Documentation for the Glasgow Haskell Compilation system
 	* ghc-mod - Happy Haskell programming
-
-    
+	* hlint - Haskell source code suggestions
+	* hoogle - Haskell API Search for Debian system
+	
 2. Download and install atom from https://atom.io
 
 3. Plugins needed to be installed:
