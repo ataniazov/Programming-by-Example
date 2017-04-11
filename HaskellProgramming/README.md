@@ -4,6 +4,11 @@
 	* haskell-platform - Standard Haskell libraries and tools
 	* haskell-platform-doc - Standard Haskell libraries and tools; documentation
 	* haskell-platform-prof - Standard Haskell libraries and tools; profiling libraries
+	* haskell-stack - The Haskell Tool Stack
+	* ghc - The Glasgow Haskell Compilation system
+	* ghc-doc - Documentation for the Glasgow Haskell Compilation system
+	* ghc-mod - Happy Haskell programming
+
     
 2. Download and install atom from https://atom.io
 
