@@ -58,7 +58,7 @@ export PATH=~/.cabal/bin:/opt/cabal/1.24/bin:/opt/ghc/8.0.2/bin:$PATH
 mkdir $HOME/ghc-mod-sandbox
 cd $HOME/ghc-mod-sandbox
 cabal sandbox init --sandbox=.
-cabal install ghc-mod stylish-haskell happy hlint
+cabal install happy ghc-mod stylish-haskell hlint
 
 $ apm install language-haskell haskell-ghc-mod ide-haskell-cabal ide-haskell autocomplete-haskell
 
