@@ -53,4 +53,13 @@ export PATH=~/.cabal/bin:/opt/cabal/1.24/bin:/opt/ghc/8.0.2/bin:$PATH
 	* Extra editing Packages:
 		* vim-mode-plus https://atom.io/packages/vim-mode-plus
 		* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
-		* 
+		
+```bash
+mkdir $HOME/ghc-mod-sandbox
+cd $HOME/ghc-mod-sandbox
+cabal sandbox init --sandbox=.
+cabal install ghc-mod stylish-haskell happy hlint
+
+$ apm install language-haskell haskell-ghc-mod ide-haskell-cabal ide-haskell autocomplete-haskell
+
+```
