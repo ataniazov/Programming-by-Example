@@ -21,4 +21,8 @@
 	* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
 	* 
 	* ide-haskell https://atom.io/packages/ide-haskell
-	* 
+	* ide-haskell-repl https://atom.io/packages/ide-haskell-repl
+	* language-haskell https://atom.io/packages/language-haskell
+	* ide-haskell-cabal https://atom.io/packages/ide-haskell-cabal
+	* haskell-ghc-mod https://atom.io/packages/haskell-ghc-mod
+	* autocomplete-haskell https://atom.io/packages/autocomplete-haskell
