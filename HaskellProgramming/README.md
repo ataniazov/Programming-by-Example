@@ -9,6 +9,7 @@
 	* ghc - The Glasgow Haskell Compilation system
 	* ghc-doc - Documentation for the Glasgow Haskell Compilation system
 	* ghc-mod - Happy Haskell programming
+	* happy - Parser generator for Haskell
 	* hlint - Haskell source code suggestions
 	* hoogle - Haskell API Search for Debian system
 	
