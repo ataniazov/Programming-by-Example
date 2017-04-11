@@ -1,6 +1,6 @@
 # Haskell Programming
 ## How to configure atom for haskell?
-1. Tool needed to be installed
+1. System tools needed to be installed
 	* haskell-platform - Standard Haskell libraries and tools
 	* haskell-platform-doc - Standard Haskell libraries and tools; documentation
 	* haskell-platform-prof - Standard Haskell libraries and tools; profiling libraries
@@ -13,10 +13,12 @@
 	* happy - Parser generator for Haskell
 	* hlint - Haskell source code suggestions
 	* hoogle - Haskell API Search for Debian system
-	
-2. Download and install atom from https://atom.io
-
-3. Plugins needed to be installed:
+2. Haskell tools needed to be installed:
+	* ghc-mod
+	* hlint
+	* stylish-haskell
+3. Download and install atom from https://atom.io
+4. Plugins needed to be installed:
 	* vim-mode-plus https://atom.io/packages/vim-mode-plus
 	* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
 	* 
