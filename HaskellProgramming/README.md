@@ -5,6 +5,7 @@
 	* haskell-platform-doc - Standard Haskell libraries and tools; documentation
 	* haskell-platform-prof - Standard Haskell libraries and tools; profiling libraries
 	* haskell-stack - The Haskell Tool Stack
+	* haskell-doc - Assorted Haskell language documentation
 	* cabal-install - command-line interface for Cabal and Hackage
 	* ghc - The Glasgow Haskell Compilation system
 	* ghc-doc - Documentation for the Glasgow Haskell Compilation system
