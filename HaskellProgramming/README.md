@@ -27,8 +27,15 @@
 		* haskell-ghc-mod https://atom.io/packages/haskell-ghc-mod
 		* autocomplete-haskell https://atom.io/packages/autocomplete-haskell
 	* Extra Atom-Haskell Packages:
+		* haskell-pointfree https://atom.io/packages/haskell-pointfree
+		* ide-haskell-hasktags https://atom.io/packages/ide-haskell-hasktags
+		* ide-haskell-hoogle https://atom.io/packages/ide-haskell-hoogle
+		* ide-haskell-profiteurjs https://atom.io/packages/ide-haskell-profiteurjs
 		* ide-haskell-repl https://atom.io/packages/ide-haskell-repl
+		* language-haskell-scoped https://atom.io/packages/language-haskell-scoped
 		
 	* Extra editing Packages:
 		* vim-mode-plus https://atom.io/packages/vim-mode-plus
 		* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
+	* Binary Dependencies:
+		* 
