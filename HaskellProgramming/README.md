@@ -28,13 +28,13 @@
 		* ide-haskell-profiteurjs https://atom.io/packages/ide-haskell-profiteurjs
 		* ide-haskell-repl https://atom.io/packages/ide-haskell-repl
 		* language-haskell-scoped https://atom.io/packages/language-haskell-scoped
-		
-	* Extra editing Packages:
-		* vim-mode-plus https://atom.io/packages/vim-mode-plus
-		* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
 	* Binary Dependencies (stack install):
 		* stylish-haskell or hindent (ide-haskell)
 		* ghc-mod (haskell-ghc-mod)
 		* hasktags (ide-haskell-hasktags)
 		* pointfree and pointful (haskell-pointfree)
 		* hoogle (ide-haskell-hoogle)
+	* Extra editing Packages:
+		* vim-mode-plus https://atom.io/packages/vim-mode-plus
+		* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
+		* 
