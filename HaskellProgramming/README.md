@@ -1,6 +1,6 @@
 # Haskell Programming
 ## How to install haskell?
-Ubuntu
+### Ubuntu
 
 Steps to setup ghc and cabal:
 ``` bash
