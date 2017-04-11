@@ -13,13 +13,8 @@
 	* happy - Parser generator for Haskell
 	* hlint - Haskell source code suggestions
 	* hoogle - Haskell API Search for Debian system
-2. Haskell tools needed to be installed:
-	* ghc-mod
-	* hlint
-
-	* Prettify
-3. Download and install atom from https://atom.io
-4. Plugins needed to be installed:
+2. Download and install atom from https://atom.io
+3. Plugins needed to be installed:
 	* Core Atom-Haskell Packages:
 		* language-haskell https://atom.io/packages/language-haskell
 		* ide-haskell https://atom.io/packages/ide-haskell
@@ -38,6 +33,8 @@
 		* vim-mode-plus https://atom.io/packages/vim-mode-plus
 		* vim-mode-plus-ex-mode https://atom.io/packages/vim-mode-plus-ex-mode
 	* Binary Dependencies (stack install):
-		* stylish-haskell
-		* ghc-mod
-		* ghc-modi
+		* stylish-haskell or hindent (ide-haskell)
+		* ghc-mod (haskell-ghc-mod)
+		* hasktags (ide-haskell-hasktags)
+		* pointfree and pointful (haskell-pointfree)
+		* hoogle (ide-haskell-hoogle)
