@@ -1,5 +1,8 @@
 {--
 ---  Ata Niyazov 130201108
+---  Programlama Dilleri Prensipleri
+---  Ödev 1
+---  Luhn algoritması
 --}
 
 module Main where
@@ -50,10 +53,15 @@ module Main where
     print imei'
     putStrLn "First we need to convert our IMEI(Integer) to List:"
     print $ numToList imei'
-    putStrLn "After we need to convert our IMEI(Integer) to List:"
+    putStrLn "After we need to multiply each second element from end by 2"
+    putStrLn "If multiplication result is greater than 9 then subtract by 9:"
     print $ eachScndFrmEnd $ numToList imei'
+    putStrLn "Then take sum of list:"
     print $ sumOfList $ eachScndFrmEnd $ numToList imei'
+    putStrLn "And check if last digit of the sum is zero:"
     print $ isLastZero $ sumOfList $ eachScndFrmEnd $ numToList imei'
+    putStrLn "If it is zero then your IMEI is VALID otherwise NOT."
+    putStrLn ""
 
   -- Our final function:
   -- Is IMEI valid?
@@ -93,10 +101,20 @@ module Main where
     putStr " IMEI number is "
     putStrLn $ if isLuhnValid imei then "VALID" else "NOT VALID"
 
+  -- Print Stundent identity
+  studentID::IO()
+  studentID = do
+    putStrLn "Ata Niyazov 130201108"
+    putStrLn ""
+    putStrLn "Programlama Dilleri Prensipleri"
+    putStrLn "Ödev 1: Luhn algoritması"
+    putStrLn ""
+
   -- This is where the magic happens;)
   -- Main function
   main::IO()
   main = do
+    studentID
     explain
+    putStrLn "Try it yourself:"
     validate
-    print $ calcLuhn 79927398713
