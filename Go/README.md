@@ -41,10 +41,33 @@ fi
 if [ -d "$HOME/Applications/go" ] ; then
     export GOROOT="$HOME/Applications/go"
     PATH="$PATH:$GOROOT/bin"
-    # set PATH so it includes user's private workspace
+    # set GOROOT_BOOTSTRAP path to go tool chain
+    export GOROOT_BOOTSTRAP="$HOME/gobootstrap"
+    # set GOPATH so it includes user's private go workspace
     export GOPATH="$HOME/go"
     PATH="$PATH:$GOPATH/bin"
 fi
+```
+
+### Fetch the repository
+
+```bash
+$ git clone https://go.googlesource.com/go
+$ cd go
+$ git checkout go$VERSION
+```
+
+### Install Go
+
+```bash
+$ cd src
+$ ./all.bash
+```
+
+### Install additional tools
+
+```
+$ go get golang.org/x/tools/cmd/...
 ```
 
 ### VS Code
