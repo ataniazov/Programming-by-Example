@@ -1,6 +1,8 @@
 package basics
 
-import "fmt"
+import (
+	"fmt"
+)
 
 var c, python, java bool
 

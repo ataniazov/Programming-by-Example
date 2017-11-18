@@ -1,6 +1,8 @@
 package basics
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func addTwo(x, y int) int {
 	return x + y
