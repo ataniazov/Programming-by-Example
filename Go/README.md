@@ -86,6 +86,8 @@ $ go get github.com/derekparker/delve/cmd/dlv
 
 ```
 "go.autocompleteUnimportedPackages": true
+"telemetry.enableTelemetry": false,
+"telemetry.enableCrashReporter": false
 ```
 
 ### Go Tour
