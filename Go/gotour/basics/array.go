@@ -11,4 +11,7 @@ func array() {
 
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 	fmt.Println(primes)
+
+	fmt.Printf("  a[2]: %6T %v\n", a, a)
+	fmt.Printf("primes: %6T %v\n", primes, primes)
 }
