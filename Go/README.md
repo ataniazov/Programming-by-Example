@@ -1,4 +1,8 @@
-## Go
+## The Go Programming Language
+
+[Go](https://golang.org/) is an open source programming language that makes it easy to build simple, reliable, and efficient software.
+
+### Installing Go
 
 ```bash
 mkdir ~/Applications/
@@ -6,7 +10,7 @@ tar -xzf go$VERSION.$OS-$ARCH.tar.gz -C ~/Applications/
 mkdir ~/go/
 ```
 
-### env
+### Installing to a custom location
 
 ```bash
 # GOROOT
@@ -14,11 +18,11 @@ export GOROOT=$HOME/Applications/go
 export PATH=$PATH:$GOROOT/bin
 
 # GOPATH
-export GOPATH="$HOME/go"
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # GOROOT_BOOTSTRAP
-export GOROOT_BOOTSTRAP=$GOROOT
+export GOROOT_BOOTSTRAP=$HOME/gobootstrap
 
 # GOBIN
 export GOBIN=$GOPATH/bin
@@ -26,7 +30,7 @@ export GOBIN=$GOPATH/bin
 
 Put this at the top of your `~/.profile`
 
-```
+```bash
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -66,7 +70,7 @@ $ ./all.bash
 
 ### Install additional tools
 
-```
+```bash
 $ go get golang.org/x/tools/cmd/...
 ```
 
@@ -86,10 +90,14 @@ $ go get github.com/derekparker/delve/cmd/dlv
 
 #### Preferences
 
-```
-"go.autocompleteUnimportedPackages": true
-"telemetry.enableTelemetry": false,
-"telemetry.enableCrashReporter": false
+```json
+{
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "go.autocompleteUnimportedPackages": true,
+    "go.useLanguageServer": true,
+    "workbench.colorTheme": "Monokai"
+}
 ```
 
 ### Go Tour
