@@ -72,6 +72,8 @@ $ go get golang.org/x/tools/cmd/...
 
 ### VS Code
 
+[Visual Studio Code](https://code.visualstudio.com/): Free & open source IDE by Microsoft. Visual Studio Code supports Go syntax highlighting out of the box. Additional features are provided by the vscode-go plugin.
+
 #### Plugins:
 
 * [Go for Visual Studio Code](https://github.com/Microsoft/vscode-go)

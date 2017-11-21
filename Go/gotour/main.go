@@ -1,13 +1,9 @@
 package main
 
-import (
-	"gotour/basics"
-	"gotour/hello"
-)
-
 func main() {
-	hello.Hello()
-	basics.Main()
+	// hello.Hello()
+	// basics.Main()
+	// methodsAndInterfaces.Main()
 
 	// fmt.Scanln()
 }
