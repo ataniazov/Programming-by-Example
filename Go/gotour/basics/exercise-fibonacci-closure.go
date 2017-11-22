@@ -10,8 +10,7 @@ func fibonacci() func() int {
 	fst, snd := 0, 1
 	return func() int {
 		cur := fst
-		fst, snd = snd, fst
-		snd += fst
+		fst, snd = snd, fst+snd
 		return cur
 	}
 }
