@@ -92,11 +92,24 @@ $ go get github.com/derekparker/delve/cmd/dlv
 
 ```json
 {
+    // Disable telemetry
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
+    // look & feel
+    // "editor.renderWhitespace": "boundary",
+    "workbench.colorTheme": "Monokai",
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#F92672"
+    },
+    // Go settings
     "go.autocompleteUnimportedPackages": true,
     "go.useLanguageServer": true,
-    "workbench.colorTheme": "Monokai"
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    // General settings
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 4000,
+    "window.zoomLevel": 0,
+    "workbench.sideBar.location": "left"
 }
 ```
 

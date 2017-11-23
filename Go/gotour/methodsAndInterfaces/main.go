@@ -6,4 +6,8 @@ func Main() {
 	methodsContinued()
 	methodsPointers()
 	methodsPointersExplained()
+	indirection()
+	indirectionValues()
+	methodsWithPointersReceivers()
+	interfaces()
 }

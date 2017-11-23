@@ -5,15 +5,15 @@ import (
 	"math"
 )
 
-type VertexTwo struct {
-	X, Y float64
-}
+// type Vertex struct {
+// 	X, Y float64
+// }
 
-func Abs(v VertexTwo) float64 {
+func Abs(v Vertex) float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
 func methodsFuncs() {
-	v := VertexTwo{3, 4}
+	v := Vertex{3, 4}
 	fmt.Println(Abs(v))
 }
