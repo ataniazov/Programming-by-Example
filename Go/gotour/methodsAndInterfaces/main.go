@@ -10,4 +10,13 @@ func Main() {
 	indirectionValues()
 	methodsWithPointersReceivers()
 	interfaces()
+	interfacesAreSatisfiedImplicitly()
+	interfaceValues()
+	interfaceValuesWithNil()
+	// nilInterfaceValues()
+	emptyInterface()
+	// typeAssertions()
+	typeSwitches()
+	stringer()
+	exerciseStringer()
 }
