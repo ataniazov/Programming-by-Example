@@ -19,4 +19,11 @@ func Main() {
 	typeSwitches()
 	stringer()
 	exerciseStringer()
+	errors()
+	exerciseErrors()
+	tourReader()
+	exerciseReader()
+	exerciseRotReader()
+	images()
+	// exerciseImages()
 }
