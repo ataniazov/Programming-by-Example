@@ -28,6 +28,30 @@ func (cell Cell) String() string {
 	return cellTypes[cell]
 }
 
+type Route uint
+
+const (
+	UNKNOWN Route = 0
+	START   Route = 1
+	END     Route = 2
+	BLOCK   Route = 3
+	PATH    Route = 4
+)
+
+func (route Route) String() string {
+	routeTypes := [...]string{
+		"UNKNOWN",
+		"START",
+		"END",
+	}
+
+	if route < START || route > END {
+		return "Unknown Route"
+	}
+
+	return routeTypes[route]
+}
+
 type maze struct {
 	matrix [][]Cell
 }
