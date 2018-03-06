@@ -121,10 +121,34 @@ startingOut = do
   print $ product [6, 2, 1, 2]
   print $ product [1, 2, 5, 6, 7, 9, 2, 0]
   -- elem
-  print $ 4 `elem` [3,4,5,6]
-  print $ 10 `elem` [3,4,5,6]
+  print $ 4 `elem` [3, 4, 5, 6]
+  print $ 10 `elem` [3, 4, 5, 6]
   print $ elem 1 []
   -- Texas ranges
+  print [1 .. 20]
+  print [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  print ['a' .. 'z']
+  print ['K' .. 'Z']
+  -- ranges with step
+  print [2,4 .. 20]
+  print [3,6 .. 20]
+  --print [20 .. 1]
+  print [20,19 .. 1]
+  print [0.1,0.3 .. 1]
+  print [13,26 .. 24 * 13]
+  print $ take 24 [13,26 ..]
+  -- cycle, repeat, replicate
+  print $ take 10 (cycle [1, 2, 3])
+  print $ take 12 (cycle "LOL ")
+  print $ take 10 (repeat 5)
+  print $ replicate 3 10
+  -- List comprehension
+  print $ take 10 [2,4 ..]
+  print [x * 2 | x <- [1 .. 10]]
+  print [x * 2 | x <- [1 .. 10], x * 2 >= 12]
+  print [x | x <- [50 .. 100], x `mod` 7 == 3]
+  -- Note: weeding out lists by predicates is also called filtering.
+  print $ boomBangs [7 .. 13]
 
 doubleMe x = x + x
 
@@ -150,4 +174,12 @@ doubleSmallNumber' x =
 conanO'Brien = "It's a-me, Conan O'Brien!"
 
 lostNumbers = [4, 8, 15, 16, 23, 42]
+
 -- [1,2,'a',3,'b','c',4]
+boomBangs xs =
+  [ if x < 10
+    then "BOOM!"
+    else "BANG!"
+  | x <- xs
+  , odd x
+  ]
