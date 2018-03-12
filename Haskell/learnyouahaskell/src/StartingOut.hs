@@ -149,6 +149,37 @@ startingOut = do
   print [x | x <- [50 .. 100], x `mod` 7 == 3]
   -- Note: weeding out lists by predicates is also called filtering.
   print $ boomBangs [7 .. 13]
+  print [x | x <- [10 .. 20], x /= 13, x /= 15, x /= 19]
+  print [x * y | x <- [2, 5, 10], y <- [8, 10, 11]]
+  print [x * y | x <- [2, 5, 10], y <- [8, 10, 11], x * y > 50]
+  let nouns = ["hobo", "frog", "pope"]
+  let adjectives = ["lazy", "grouchy", "scheming"]
+  print [adjective ++ " " ++ noun | adjective <- adjectives, noun <- nouns]
+  print $ removeNonUppercase "Hahaha! Ahahaha!"
+  print $ removeNonUppercase "IdontLIKEFROGS"
+  let xxs = [[1, 3, 5, 2, 3, 1, 2, 4, 5], [1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 4, 2, 1, 6, 3, 1, 3, 2, 3, 6]]
+  print [[x | x <- xs, even x] | xs <- xxs]
+  -- Tuples
+  -- fst, snd
+  print $ fst (8, 11)
+  print $ fst ("Wow", False)
+  print $ snd (8, 11)
+  print $ snd ("Wow", False)
+  -- zip
+  print $ zip [1, 2, 3, 4, 5] [5, 5, 5, 5, 5]
+  print $ zip [1 .. 5] ["one", "two", "three", "four", "five"]
+  print $ zip [5, 3, 2, 6, 2, 7, 2, 5, 4, 6, 6] ["im", "a", "turtle"]
+  print $ zip [1 ..] ["apple", "orange", "cherry", "mango"]
+  let triangles = [(a, b, c) | c <- [1 .. 10], b <- [1 .. 10], a <- [1 .. 10]]
+  let triangles = [(a, b, c) | c <- [1 .. 10], b <- [1 .. 10], a <- [1 .. 10], a ^ 2 + b ^ 2 == c ^ 2]
+  print triangles
+  let rightTriangles = [(a, b, c) | c <- [1 .. 10], b <- [1 .. c], a <- [1 .. b], a ^ 2 + b ^ 2 == c ^ 2]
+  print rightTriangles
+  let rightTriangles' =
+        [(a, b, c) | c <- [1 .. 10], b <- [1 .. c], a <- [1 .. b], a ^ 2 + b ^ 2 == c ^ 2, a + b + c == 24]
+  print rightTriangles'
+  -- take a starting set of solutions and then apply
+  -- transformations to those solutions and filter them.
 
 doubleMe x = x + x
 
@@ -183,3 +214,8 @@ boomBangs xs =
   | x <- xs
   , odd x
   ]
+
+-- "_" placeholder
+length' xs = sum [1 | _ <- xs]
+
+removeNonUppercase st = [c | c <- st, c `elem` ['A' .. 'Z']]
