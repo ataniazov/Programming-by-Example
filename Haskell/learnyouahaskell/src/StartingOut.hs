@@ -3,6 +3,7 @@ module StartingOut where
 startingOut :: IO ()
 startingOut = do
   putStrLn "Starting Out"
+  putStrLn "Ready, set, go!"
   -- stack ghci
   -- Prelude> -> ghci>
   -- :set prompt "ghci> "
@@ -13,6 +14,7 @@ startingOut = do
   print ((50 * 100) - 4999)
   print (50 * 100 - 4999)
   print (50 * (100 - 4999))
+  --print (5 * -3)
   print (5 * (-3))
   print (True && False)
   print (True && True)
@@ -42,6 +44,7 @@ startingOut = do
   print (92 `div` 10)
   print (92 / 10)
   -- Baby's first functions
+  putStrLn "Baby's first functions"
   -- baby.hs
   -- :l baby
   print (doubleMe 9)
@@ -50,6 +53,7 @@ startingOut = do
   print (doubleUs 2.3 34.2)
   print (doubleUs 28 88 + doubleMe 123)
   -- An intro to lists
+  putStrLn "An intro to lists"
   -- Lists are a homogenous data structure,
   -- it stores several elements of the same type.
   --a = 1
@@ -125,6 +129,7 @@ startingOut = do
   print $ 10 `elem` [3, 4, 5, 6]
   print $ elem 1 []
   -- Texas ranges
+  putStrLn "Texas ranges"
   print [1 .. 20]
   print [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
   print ['a' .. 'z']
@@ -143,6 +148,7 @@ startingOut = do
   print $ take 10 (repeat 5)
   print $ replicate 3 10
   -- List comprehension
+  putStrLn "I'm a list comprehension"
   print $ take 10 [2,4 ..]
   print [x * 2 | x <- [1 .. 10]]
   print [x * 2 | x <- [1 .. 10], x * 2 >= 12]
@@ -160,6 +166,7 @@ startingOut = do
   let xxs = [[1, 3, 5, 2, 3, 1, 2, 4, 5], [1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 4, 2, 1, 6, 3, 1, 3, 2, 3, 6]]
   print [[x | x <- xs, even x] | xs <- xxs]
   -- Tuples
+  putStrLn "Tuples"
   -- fst, snd
   print $ fst (8, 11)
   print $ fst ("Wow", False)
