@@ -1,0 +1,303 @@
+\documentclass[a4paper,12pt]{book}
+% \documentclass[a4paper,12pt,landscape,twocolumn]{book}
+% \renewcommand{\familydefault}{\sfdefault}
+\usepackage[a4paper,inner=1.7cm,outer=2.7cm,top=2cm,bottom=2cm,bindingoffset=1.2cm]{geometry}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage[scaled=.92]{helvet}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+% \usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{index}
+% \usepackage{paralist}
+% \usepackage{parskip}
+% \usepackage[onehalfspacing]{setspace}
+% \usepackage[singlespacing]{setspace}
+% \usepackage[doublespacing]{setspace}
+
+\newcommand{\NTT}{New Think Tank}
+\newcommand{\NTTB}{\textbf{New Think Tank}}
+\newcommand{\typew}[1]{\texttt{#1}}
+
+\makeindex
+
+\begin{document}
+\title{\Large{\textbf{LaTeX Tutorial}}}
+\author{By Edison}
+\date{April 23, 2019}
+
+\maketitle
+\let\cleardoublepage\clearpage
+\tableofcontents
+
+\pagenumbering{roman}
+\setcounter{page}{2}
+% \fancyhf{}
+% \renewcommand{\headrulewidth}{2pt}
+% \renewcommand{\footrulewidth}{1pt}
+% \fancyhead[LE]{\leftmark}
+% \fancyhead[RO]{\nouppercase}{\rightmark}
+% \fancyfoot[LE,RO]{\thepage}
+
+\chapter{Chapter Name}
+
+\blindmathtrue
+\blindtext[5]
+
+\section{A Section}
+% \enlargethispage{\baselineskip}
+% \blindtext[2]
+% \blinditemize
+% \blindenumerate
+% \blinddescription
+\begin{figure}[ht]
+    \centering
+
+    \includegraphics[width=8cm]{pic.png}
+\end{figure}
+\blindtext
+\newpage
+
+\section*{Wrap Image}
+\begingroup
+\setlength{\intextsep}{0pt}
+\setlength{\columnsep}{15pt}
+
+\begin{wrapfigure}{r}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{pic.png}
+    \caption{Pretty Picture}\label{fig:prettypic}
+\end{wrapfigure}
+
+\blindtext
+
+\endgroup
+
+% \section*{Spacing}
+% \LaTeX\
+% Just random \\
+% The second line is indented. If    we    use    multiple    spaces\\[10pt]
+
+% \% \$ \& \_ \textbackslash
+
+\section[Smoothie]{Smoothie Recipe}
+
+\begin{itemize}
+    \item 1 Cup Spinach
+    \item 1 Cup Frozen Blueberries
+    \item 2 Bananas
+    \item 1.5 Cups Almond Milk
+    \item Powders
+    \begin{itemize}
+        \item 1 Tbs PB2
+        \item 1 Tsp Ambla Powder
+    \end{itemize}
+    \item 6 Dates
+\end{itemize}
+
+% 1 a to i. A
+% \item[customNumbering]
+\setlist{nolistsep}
+
+% \section{Smoothie}
+% \blindtext[2]
+% % \pagebreak
+% \newpage
+
+\section{Perfect Meal Recipe}
+% \begin{enumerate}[label=\Roman*, \arabic*]
+% \begin{enumerate}[label=\Roman*, \alpha*]
+% \begin{enumerate}[label=\Roman*, \Alpha*]
+% \begin{enumerate}[label=\Roman*, \roman*]
+\begin{enumerate}[label=\Roman*,font=\bfseries]
+    \item Add the following and cook for 2 minutes
+    \begin{itemize}
+        \item 1 tsp Olive Oil
+        \item 1 Cup Onion, diced
+        \item 3 cloves Garlic, minced
+        \item 1 tsp Salt
+        \item 1 Cup chopped Portobello Mushrooms
+    \end{itemize}
+    \item Add the following and cook for 2 minutes
+    \begin{itemize}
+        \item 2 TBs Curry Powder
+        \item 1 tsp Fresh Minced Ginger
+        \item 2 TBs Tomato Paste
+    \end{itemize}
+    \item Add the following and simmer for 15 minutes
+    \begin{itemize}
+        \item 1 cup uncooked Lentils
+        \item 4 cups Vegetable Broth
+    \end{itemize}
+    \item Add the following and simmer for 20 minutes
+    \begin{itemize}
+        \item 2 cups chopped Carrots
+        \item 4 Cups cubed Yams
+    \end{itemize}
+    \item Add the following and cook for 10 minutes
+    \begin{itemize}
+        \item 2 cups boiled diced Collard Greens
+        \item 1 cup frozen diced Spinach
+    \end{itemize}
+\end{enumerate}
+\bigskip
+
+\begin{description}
+    \item[Philtrum] The vertical groove on the median line of the upper lip
+    \item[Darkle] Becoming cloudy or dark
+    \item[Pogonotrophy] Growing and grooming a beard or other facial hear
+    \item[Interrobang] A punctuation mark designed for use especially at the end of an exclamatory rhetorical question; usually written as ?!
+\end{description}
+
+\begin{tabbing}
+    Customer \= Name \hspace*{1.5cm}\= Street \hspace*{1.5cm} \= City \\
+    \> Nikola Tesla \> 123 Main St \> Pittsburgh \\
+\end{tabbing}
+
+\begin{table}
+\begin{tabular}{l|l|l}
+    % \usepackage{booktabs} \toprule \midrule \bottomrule \hline
+    \textbf{Name} & \textbf{Commands} & \textbf{Sample Text} \\
+    \hline
+    emphasize & \verb|\emph| & \emph{abcdefgh} \\
+    italic & \verb|\textit| & \textit{abcdefgh} \\
+    slanted & \verb|\textbf| & \textbf{abcdefgh} \\
+    bold & \verb|\emph| & \emph{abcdefgh} \\
+    small capped & \verb|\textsc| & \textsc{abcdefgh} \\
+    medium & \verb|\textmd| & \textmd{abcdefgh} \\
+    upright & \verb|\textup| & \textup{abcdefgh} \\
+    roman family & \verb|\textrm| & \textrm{abcdefgh} \\
+    sans serif & \verb|\textsf| & \textsf{abcdefgh} \\
+    typewriter & \verb|\texttt| & \texttt{abcdefgh} \\
+    combo & \verb|\textup{\textbf{}}| & \textup{\textbf{abcdefgh}} \\
+\end{tabular}
+\caption{Ways to emphasize text}\label{sec:typeemp}
+\end{table}
+
+\begin{tabular}{@{}*3l@{}}
+    \multicolumn{2}{c}{Name} &
+    \multicolumn{1}{c}{Age}\\
+    First & Last & \\
+    \hline
+    Nikola & Tesla & 44\\
+    Sally & Smith & 42\\
+\end{tabular}\\
+
+% \usepackage[utf8]{inputenc} on Linux/MacOS and
+% \usepackage[latin1]{inputenc} on Windows
+% \'{a} \^{e} \`{o} \"{u} \.{a} \={o} \~{n} \u{a} \H{a} \v{e} \t{oo} \c{c} \d{n} \b{i}
+
+\section[Type]{\textsf{Type Emphasis \& Sizing}} \label{sec:typeemp}
+\itshape italic, \slshape slanted, \scshape small caps, \upshape upright, \normalfont back to normal\\
+
+Get Smaller : \normalsize{normal}, \small{small}, \footnotesize{footnote}, \scriptsize{script}, \tiny{tiny}
+
+Get Bigger : \large{large}, \Large{larger}, \LARGE{larger}, \huge{huge}, \Huge{Hugest}
+
+\begin{LARGE}
+    I want to use a big font
+\end{LARGE}
+
+\normalsize{Back to normal}
+
+\section{\textsf{Font Families}}
+We can {\sffamily temporarily change} a font family, \ttfamily or change it for the rest of the document \sffamily
+
+\begin{quote}
+    "`I like long walks, especially when they are taken by people who annoy me."
+    - Fred Allen
+\end{quote}
+
+\section{Math Formulas}
+\begin{flalign*}
+    & ax^2 + bx + c = 0 &\\
+\end{flalign*}
+
+This \( ax^2 + bx + c = 0 \) is the quadratic equation \\
+
+$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ \\
+
+Greek letters $\alpha \beta \gamma \delta \epsilon \zeta \eta \theta \vartheta \iota \kappa \lambda \Lambda \mu \nu \xi \Xi \pi \Pi \rho \varrho \sigma \Sigma \tau \upsilon \Upsilon \phi \varphi \Phi \chi \psi \Psi \Omega \omega $ \\
+
+Script letters $\mathcal{A}, \mathcal{B}$
+
+Subscript $t_0$ \\
+
+Superscript $x^2$ \\
+
+Operators $\arccos, \arcsin, \arctan, \arg, \cos, \cosh, \cot, \coth, \deg,
+\det, \dim, \exp, \gcd,\\ \hom, \inf, \ker, \lim, \lg, \liminf, \limsup, \ln, \log,
+\max, \min, \Pr, \sec, \sin, \sinh, \sup, \tan, \tanh$ \\
+
+Arrows $\leftarrow, \Leftarrow, \rightarrow, \Rightarrow, \leftrightarrow, \rightleftharpoons,
+\uparrow, \downarrow, \Uparrow, \Downarrow, \Leftrightarrow, \Updownarrow, \mapsto, \longmapsto,
+\nearrow, \searrow, \swarrow, \nwarrow, \leftharpoonup, \rightharpoonup, \leftharpoondown, \rightharpoondown$ \\
+
+Relational Operators $ \geq, \gg, \leq, \ll, \neq $ \\
+
+Binary Operation/Relation Symbols $ \approx, \asymp, \bowtie, \cong, \dashv, \doteq,
+\equiv, \frown, \mid, \models, \parallel, \perp, \prec, \preceq, \propto, \sim, \simeq, \smile,
+\succ, \succeq, \vdash $ \\
+
+Vectors $\vec{a}\cdot\hat{x}=a_x$
+
+$\begin{pmatrix}
+    1 & 2 \\
+    3 & 4
+\end{pmatrix}$
+
+Integrals $\Delta x=\int_{t_0}^{t_1}v(t)dt$ \\
+
+Limits $\lim_{x\to0}\frac 1 x = \infty$ \\
+
+Summations $e^x=\sum_{n=0}^\infty\frac{x^n}{n!}$ \\
+
+\section{\textsf{Custom Commands}}
+
+\NTT\ or \NTTB\
+
+Style to \typew{typewriter}.
+
+\section{Text Columns}
+
+{\centering
+Get in the middle of me\\
+Okay\\[10pt]
+}
+
+\quad\parbox{4cm}{I used to think I was indecisive, but now I'm not too sure.}
+\quad\parbox{2cm}{Always re\-mem\-ber that you're unique. Just like everyone.}
+\quad\parbox{2cm}{\raggedright I always wanted to be somebody, but I should have been more specific.}
+\quad\parbox{2cm}{\raggedleft When I was a kid my parents moved a lot, but I always found them.}
+
+\begin{minipage}{5cm}
+    One advantage of talking to yourself is that you know at least somebody's listening.
+\end{minipage}
+
+\section{Referencing}
+
+The answer you're looking for is inside of you, but it's wrong.
+\footnote[2]{author unknown} \\[5pt]
+
+There is a great table on Type Emphasis is in this section~\ref{sec:typeemp} on page~\pageref{sec:typeemp}\\[2pt]
+There is a pretty picture in section~\ref{fig:prettypic} on page~\pageref{fig:prettypic}\\[2pt]
+
+How I learned my ABCs \cite{ABCAFR}.
+
+\begin{thebibliography}{books}
+    \bibitem{ABCAFR} Walter Abish \emph{The Alphabetical Africa}, 1974
+\end{thebibliography}
+
+When I was born I was so ugly the doctor slapped my mother - {\index{Rodney}Rodney Dangerfield} \\[2pt]
+
+\blindtext
+
+\clearpage
+\addcontentsline{toc}{chapter}{index}
+\printindex
+
+\end{document}
