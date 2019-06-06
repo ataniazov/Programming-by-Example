@@ -83,6 +83,7 @@ typesAndTypeclasses = do
   print (read "5" :: Int)
   print (read "5" :: Float)
   print $ (read "5" :: Float) * 4
+  print $ (read "[1,2,3,4]" :: [Int])
   print (read "(3, 'a')" :: (Int, Char))
   -- Enum members are sequentially ordered types.
   -- (), Bool, Char, Ordering, Int, Integer, Float, Double.
@@ -122,7 +123,6 @@ typesAndTypeclasses = do
   -- print $ (length [1,2,3,4]) + 3.2
   print $ fromIntegral (length [1, 2, 3, 4]) + 3.2
 
---  print $ read "[1,2,3,4]"
 --removeNonUppercase :: [Char] -> [Char]
 removeNonUppercase :: String -> String
 removeNonUppercase st = [c | c <- st, c `elem` ['A' .. 'Z']]

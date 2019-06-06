@@ -10,7 +10,7 @@ main :: IO ()
 --main = someFunc
 main = do
   putStrLn "Hello, World!"
-  introduction
---  startingOut
---  typesAndTypeclasses
+  --introduction
+  --startingOut
+  --typesAndTypeclasses
   syntaxInFunctions
