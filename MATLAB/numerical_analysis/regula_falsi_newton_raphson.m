@@ -1,3 +1,5 @@
+
+
 %------------- BEGIN CODE --------------
 
 % ekran ve bellek on temizleme
