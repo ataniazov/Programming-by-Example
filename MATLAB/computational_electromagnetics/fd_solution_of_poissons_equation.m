@@ -166,7 +166,7 @@ for I = 1:NX-1
             SUM=SUM + TERM;
         end
         VI = SUM;
-        Vexact(I+1,J+1) = VH + VI
+        Vexact(I+1,J+1) = VH + VI;
     end
 end
 

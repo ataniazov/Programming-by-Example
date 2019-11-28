@@ -76,7 +76,7 @@ for n = 1:length(h)
         if Rmin >= 0.0001
             % Solution has converged
             iteration(n) = iteration(n) + 1;
-            if(iteration(n) > 100)
+            if iteration(n) > 100
                 loop = false;
                 disp('Solution does not converge in 100 iterations')
             end
