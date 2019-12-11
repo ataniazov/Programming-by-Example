@@ -21,8 +21,8 @@ format short g; format compact ;
 % 2a = 0 || 2g = 0
 
 % Specify values and necessary parameters
-x = [-1 0 1 2]
-y = [-0.5 0 0.5 0.866]
+x = [1 2 3 4]
+y = [0 0.6931 1.0986 1.3863]
 
 range = length(x)-1;
 unknown = 3 * range;
@@ -84,6 +84,13 @@ end
 
 x_
 y_
+
+% gx_ = tan(pi*x_)
+% plot(x_, y_, 'b', x, y, 'r*', x_, gx_, 'k');
+% legend('found', 'known', 'real', 'Location', 'northwest');
+% xlabel('x');
+% ylabel('y');
+% grid;
 
 plot(x_, y_, 'b', x, y, 'r*');
 title('Quadratic spline method');

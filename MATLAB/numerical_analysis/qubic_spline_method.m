@@ -23,6 +23,12 @@ format short g; format compact ;
 x = [-1 0 1 2]
 y = [-0.5 0 0.5 0.866]
 
+% x = [1 1.5 2 4.1 5];
+% y = [1 -1 1 -1 1];
+
+% x = [0 1 2.5 3.6 5 7 8.1 10];
+% y = sin(x);
+
 range = length(x)-1;
 unknown = 4 * range;
 
@@ -84,11 +90,18 @@ end
 x_
 y_
 
-plot(x_, y_, 'b', x, y, 'r*');
-title('Qubic spline method');
-legend('found', 'known', 'Location', 'northwest');
+gx_ = sin((pi*x_)/6);
+plot(x_, y_, 'r', x, y, 'b*', x_, gx_, 'k');
+legend('found', 'known', 'real', 'Location', 'northwest');
 xlabel('x');
 ylabel('y');
 grid;
+
+% plot(x_, y_, 'b', x, y, 'r*');
+% title('Qubic spline method');
+% legend('found', 'known', 'Location', 'northwest');
+% xlabel('x');
+% ylabel('y');
+% grid;
 
 % ----------------------- END OF CODE ----------------------
